@@ -16,21 +16,22 @@ const ul = document.querySelector("ul.list");
 for  (let i = 1; i<=100; i++) {
   const element =`<li class="box box-- ${i}">  ${i} </li>`
   ul.innerHTML += element;
+  const li = document.createElement('li');
+  li.append('Elemento');
+  ul.append(li);
   // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
-  if ((n % 3 == 0) && (n % 5 == 0)) {
+  if ((i % 3 == 0) && (i % 5 == 0)) {
     console.log("FizzBuzz");
     // Per i multipli di 3 stampi “Fizz” al posto del numero
-  } else if (n % 3 == 0) {
+  } else if (i % 3 == 0) {
     console.log("Fizz")
     // per i multipli di 5 stampi Buzz
-  } else if (n % 5 ==0) {
+  } else if (i % 5 ==0) {
     console.log("Buzz")
     // per tutti i numeri
   } else {
-    console.log(i)s
+    console.log(i)
   }
 }
 
 
-
-// per i numeri multipli di 3 stampi Fizz al posto del numero

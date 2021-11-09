@@ -3,3 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin:5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 30px;
+}
+
+body {
+  background-color: #5594ab;
+}
+
+.container {
+  width: 80%;
+  margin:0 auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
