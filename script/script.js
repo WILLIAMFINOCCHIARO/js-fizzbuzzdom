@@ -7,7 +7,7 @@
 // scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-// dati di input
+
 // / Seleziono container 
 const container = document.getElementById("container");
 
