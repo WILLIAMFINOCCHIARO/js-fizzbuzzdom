@@ -1,42 +1,46 @@
-* {
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+  background-color: rgb(18, 59, 70);
+  padding: 20px 0;
 }
 
-.box {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-  margin:5px 10px;
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/* Container  */
+#container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quadrato{
+  width: calc(90% / 7) ;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 12px;
+  /* debug */
+  background-color: rgb(18, 116, 155);
+  
 }
 
-.title {
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  padding-bottom: 30px;
+/* Regole fizz ( numero divisibile per 3) */
+.fizz{
+  background-color: rgb(209, 68, 209);
 }
 
-body {
-  background-color: #5594ab;
+/* Regole buzz ( numero divisibile per 5) */
+.buzz {
+  background-color: rgb(238, 91, 91);
 }
 
-.container {
-  width: 80%;
-  margin:0 auto;
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-ul {
-  list-style: none;
-  color: white;
+/* Regole Fizzbuzz ( numero divisibile per 3 e 5 ) */
+.fizzbuzz{
+  background-color: rgb(64, 231, 178);
 }

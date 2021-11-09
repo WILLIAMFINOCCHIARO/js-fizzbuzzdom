@@ -8,30 +8,31 @@
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 // dati di input
+// / Seleziono container 
+const container = document.getElementById("container");
 
-// lista di numeri da 1 a 100 
-const ul = document.querySelector("ul.list");
+// "lista" di numeri da 1 a 100
+for ( i=1; i<=100; i++) {
+    let div = document.createElement("div");
+    div.classList.add("quadrato");
+    div.append(i);
+    container.append(div);
 
-// lista di numeri da 1 a 100 
-for  (let i = 1; i<=100; i++) {
-  const element =`<li class="box box-- ${i}">  ${i} </li>`
-  ul.innerHTML += element;
-  const li = document.createElement('li');
-  li.append('Elemento');
-  ul.append(li);
-  // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
-  if ((i % 3 == 0) && (i % 5 == 0)) {
-    console.log("FizzBuzz");
-    // Per i multipli di 3 stampi “Fizz” al posto del numero
-  } else if (i % 3 == 0) {
-    console.log("Fizz")
-    // per i multipli di 5 stampi Buzz
-  } else if (i % 5 ==0) {
-    console.log("Buzz")
-    // per tutti i numeri
-  } else {
-    console.log(i)
-  }
+
+if ( i%3 === 0 &&  i%5 ===0 ){
+// se il numero è divisibile per 3 e 5 aggiungo classe fizzbuzz 
+div.classList.add("fizzbuzz");
+div.innerHTML="fizzbuzz";
+
+} else if ( i%3 === 0 ) {
+// se il numero è divisibile per 3 aggiungo classe fizz 
+div.classList.add("fizz");
+div.innerHTML="fizz";
+
+} else if ( i%5 === 0 ) {
+// se il numero è divisibile per 5 aggiungo classe buzz
+div.classList.add("buzz");
+div.innerHTML="buzz";
+} 
+
 }
-
-
